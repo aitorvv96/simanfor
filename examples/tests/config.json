@@ -1,0 +1,14 @@
+{
+  "group_1": {
+    "property_1": 1,
+    "property_2": "value_2"
+  },
+  "group_2": "value_2",
+  "group_3": 1,
+  "group_4": {
+    "property_n": {
+      "property_1": 1,
+      "property_2": 2
+    }
+  }
+}

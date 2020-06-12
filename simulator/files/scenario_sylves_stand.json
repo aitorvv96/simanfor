@@ -1,0 +1,121 @@
+{
+  "name": "Experimento Claras",
+  "overwrite_output_file": "YES",
+  "output_path": "C:/Users/Aitor/Documents/Oficina/Vbox_shared/simulator-actualizacion/output/Psylvestris_stand__SILVES__mad__v01.py_stand__",
+  "decimal_numbers": 2,
+  "zip_compression": "NO",
+  "operations": {
+    "operation_0":{
+      "name": "Inicio",
+      "description": "Carga de datos",
+      "model_path": "models.load.basic_load",
+      "model_class": "BasicLoad",
+      "operation": "LOAD",
+      "variables": {
+        "init": 25,
+        "time": 0,
+        "input": "C:/Users/Aitor/Documents/Oficina/Vbox_shared/simulator-actualizacion/data/data_sm4.2015.1p_eng.xlsx"
+      }
+    },
+    "operation_1":{
+      "name": "Inicio",
+      "description": "Inicialización de datos",
+      "model_path": "models.stand.Psylvestris_stand__SILVES__mad__v01.py",
+      "model_class": "Sylves",
+      "operation": "INIT",
+      "variables": {
+        "time": 0
+      }
+    },
+    "operation_2":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.stand.Psylvestris_stand__SILVES__mad__v01.py",
+      "model_class": "Sylves",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 0,
+        "max_age": 100
+      }
+    },
+    "operation_3":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.stand.Psylvestris_stand__SILVES__mad__v01.py",
+      "model_class": "Sylves",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "PERCENTOFTREES",
+        "volumen": 10,
+        "min_age": 0,
+        "max_age": 100
+      }
+    },
+    "operation_4":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.stand.Psylvestris_stand__SILVES__mad__v01.py",
+      "model_class": "Sylves",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 0,
+        "max_age": 100
+      }
+    },
+    "operation_5":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.stand.Psylvestris_stand__SILVES__mad__v01.py",
+      "model_class": "Sylves",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "VOLUME",
+        "volumen": 10,
+        "min_age": 0,
+        "max_age": 100
+      }
+    },
+    "operation_6":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.stand.Psylvestris_stand__SILVES__mad__v01.py",
+      "model_class": "Sylves",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 0,
+        "max_age": 100
+      }
+    },
+    "operation_7":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.stand.Psylvestris_stand__SILVES__mad__v01.py",
+      "model_class": "Sylves",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "AREA",
+        "volumen": 10,
+        "min_age": 0,
+        "max_age": 100
+      }
+    },
+    "operation_8":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.stand.Psylvestris_stand__SILVES__mad__v01.py",
+      "model_class": "Sylves",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 0,
+        "max_age": 100
+      }
+    }
+  }
+}

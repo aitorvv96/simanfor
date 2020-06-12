@@ -1,0 +1,8 @@
+{
+  "dask": {
+    "processes": "False",
+    "threads_per_worker": 1,
+    "num_workers": 4,
+    "memory_limit": "2GB"
+  }
+}

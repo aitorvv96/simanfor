@@ -1,0 +1,187 @@
+{
+  "name": "Experimento Claras",
+  "overwrite_output_file": "YES",
+  "output_path": "/home/spiros/dev/simanfor/output/output_release/",
+  "decimal_numbers": 4,
+  "zip_compression": "NO",
+  "operations": {
+    "operation_0":{
+      "name": "Inicio",
+      "description": "Carga de datos",
+      "model_path": "models.load.basic_load",
+      "model_class": "BasicLoad",
+      "operation": "LOAD",
+      "variables": {
+        "init": 25,
+        "time": 0,
+        "input": "/home/spiros/dev/simanfor/release/data/inventario_01.xlsx"
+      }
+    },
+    "operation_1":{
+      "name": "Inicio",
+      "description": "Inicialización de datos",
+      "model_path": "models.trees.Ppinaster_m_v24",
+      "model_class": "PinusPinaster",
+      "operation": "INIT",
+      "variables": {
+        "time": 0
+      }
+    },
+    "operation_2":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.harvest.cut_down_by_smallest",
+      "model_class": "CutDownBySmallest",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "PERCENTOFTREES",
+        "volumen": 10,
+        "min_age": 23,
+        "max_age": 28
+      }
+    },
+    "operation_3":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.trees.Ppinaster_m_v24",
+      "model_class": "PinusPinaster",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 23,
+        "max_age": 28
+      }
+    },
+    "operation_4":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.harvest.cut_down_by_smallest",
+      "model_class": "CutDownBySmallest",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "VOLUME",
+        "volumen": 10,
+        "min_age": 27,
+        "max_age": 33
+      }
+    },
+    "operation_5":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.trees.Ppinaster_m_v24",
+      "model_class": "PinusPinaster",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 27,
+        "max_age": 33
+      }
+    },
+    "operation_6":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.harvest.cut_down_by_smallest",
+      "model_class": "CutDownBySmallest",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "AREA",
+        "volumen": 10,
+        "min_age": 32,
+        "max_age": 38
+      }
+    },
+    "operation_7":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.trees.Ppinaster_m_v24",
+      "model_class": "PinusPinaster",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 32,
+        "max_age": 38
+      }
+    },
+    "operation_8":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.harvest.cut_down_by_tallest",
+      "model_class": "CutDownByTallest",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "PERCENTOFTREES",
+        "volumen": 10,
+        "min_age": 37,
+        "max_age": 43
+      }
+    },
+    "operation_9":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.trees.Ppinaster_m_v24",
+      "model_class": "PinusPinaster",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 37,
+        "max_age": 43
+      }
+    },
+    "operation_10":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.harvest.cut_down_by_tallest",
+      "model_class": "CutDownByTallest",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "VOLUME",
+        "volumen": 10,
+        "min_age": 42,
+        "max_age": 48
+      }
+    },
+    "operation_11":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.trees.Ppinaster_m_v24",
+      "model_class": "PinusPinaster",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 42,
+        "max_age": 48
+      }
+    },
+    "operation_12":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.harvest.cut_down_by_tallest",
+      "model_class": "CutDownByTallest",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "AREA",
+        "volumen": 10,
+        "min_age": 47,
+        "max_age": 53
+      }
+    },
+    "operation_13":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.trees.Ppinaster_m_v24",
+      "model_class": "PinusPinaster",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5,
+        "min_age": 47,
+        "max_age": 53
+      }
+    }
+  }
+}

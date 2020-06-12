@@ -1,0 +1,65 @@
+{
+  "name": "Experimento 12",
+  "overwrite_output_file": "YES",
+  "output_path": "C:/Users/Aitor/Documents/Oficina/Vbox_shared/simulator-actualizacion/output/psyl_stand__",
+  "decimal_numbers": 2,
+  "zip_compression": "NO",
+  "operations": {
+    "operation_0":{
+      "name": "Inicio",
+      "description": "Carga de datos",
+      "model_path": "models.load.basic_load",
+      "model_class": "BasicLoad",
+      "operation": "LOAD",
+      "variables": {
+        "init": 25,
+        "time": 0,
+        "input": "C:/Users/Aitor/Documents/Oficina/Vbox_shared/simulator-actualizacion/data/data_sm4.2015.1p_pp.xlsx"
+      }
+    },
+    "operation_1":{
+      "name": "Inicio",
+      "description": "Inicialización de datos",
+      "model_path": "models.stand.Psylvestris",
+      "model_class": "PinusSylvestrisStand",
+      "operation": "INIT",
+      "variables": {
+        "time": 0
+      }
+    },
+    "operation_2":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.stand.Psylvestris",
+      "model_class": "PinusSylvestrisStand",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5
+      }
+    },
+    "operation_3":{
+      "name": "Simulacion 10",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.stand.Psylvestris",
+      "model_class": "PinusSylvestrisStand",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5
+      }
+    },
+    "operation_4":{
+      "name": "Corta",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.stand.Psylvestris",
+      "model_class": "PinusSylvestrisStand",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "PERCENTOFTREES",
+        "volumen": 10,
+        "min_age": 0,
+        "max_age": 1000
+      }
+    }
+  }
+}

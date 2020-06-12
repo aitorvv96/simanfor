@@ -1,0 +1,65 @@
+{
+  "name": "Experimento 12",
+  "overwrite_output_file": "YES",
+  "output_path": "/home/momartin/project/simanfor/output/output_simulation_12",
+  "decimal_numbers": 2,
+  "zip_compression": "NO",
+  "operations": {
+    "operation_0":{
+      "name": "Inicio",
+      "description": "Carga de datos",
+      "model_path": "models.load.basic_load",
+      "model_class": "BasicLoad",
+      "operation": "LOAD",
+      "variables": {
+        "init": 25,
+        "time": 0,
+        "input": "/home/momartin/projects/simanfor/data/inventario_10.xlsx"
+      }
+    },
+    "operation_1":{
+      "name": "Inicio",
+      "description": "Inicialización de datos",
+      "model_path": "models.trees.2010_ibero_ppinaster_v23",
+      "model_class": "PinusPinaster",
+      "operation": "INIT",
+      "variables": {
+        "time": 0
+      }
+    },
+    "operation_2":{
+      "name": "Simulacion 5",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.trees.2010_ibero_ppinaster_v23",
+      "model_class": "PinusPinaster",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5
+      }
+    },
+    "operation_3":{
+      "name": "Simulacion 10",
+      "description": "Simulación durante 5 años",
+      "model_path": "models.trees.2010_ibero_ppinaster_v23",
+      "model_class": "PinusPinaster",
+      "operation": "EXECUTION",
+      "variables": {
+        "time": 5
+      }
+    },
+    "operation_4":{
+      "name": "Harvest",
+      "description": "Corta",
+      "model_path": "models.harvest.cut_down_by_smallest",
+      "model_class": "CutDownBySmallest",
+      "operation": "HARVEST",
+      "variables": {
+        "time": 0,
+        "cut_down": "AREA",
+        "volumen": 16,
+        "min_age": 0,
+        "max_age": 1000
+      }
+    }
+  }
+}

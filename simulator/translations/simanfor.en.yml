@@ -1,0 +1,243 @@
+en:
+  general:  # Summary sheet
+
+    # Cuts
+    Percent of trees: Percentaje of trees
+    Volumen: Volume
+    Area: Basal area
+    Cut Down by Tallest: High thinning
+    Cut Down by Smallest: Low thinning
+    Systematics cut down: Sistematic thinning
+
+    # General information
+    Plots: Plots
+    Node: Node
+    Trees: Trees
+    Empty: Not apply
+    Summary: Summary
+    NodesSummary: Summary node
+    main_specie: Main Specie
+    specie_ifn_id: Main Specie NFI ID 
+    forest: Forest
+    study_area: Study Area
+    model: Model
+    scenario: Stage
+    inventory: Inventory
+    template: Template
+    plot: Plot
+
+    # Actuations
+    LOAD: Inicial load
+    INIT: Initialization
+    EXECUTION: Execution
+    HARVEST: Thinning
+
+    # Variables name 
+    measure_1: Ho m
+    measure_2: N pies/ha
+    measure_3: Dg cm
+    measure_4: G m2/ha
+    measure_5: V m3/ha
+    measure_6: N pies/ha
+    measure_7: Dg cm
+    measure_8: V m3/ha
+    measure_9: N pies/ha
+    measure_10: Dg cm
+    measure_11: G m2/ha
+    measure_12: V m3/ha
+    measure_13: N pies/ha
+    measure_14: Dg cm
+    measure_15: V m3/ha
+    measure_16: N pies/ha
+    measure_17: G m2/ha
+    merged_header_1: Stand before thinning
+    merged_header_2: Thinning
+    merged_header_3: Stand after thinning
+    merged_header_4: Mortality
+    merged_header_5: Ingrowth
+
+  plot:
+    # IDs
+    INVENTORY_ID: Inventory ID
+    PLOT_ID: Plot ID
+
+    # Stage general information
+    Id: ID
+    Age: Stage age
+    Action: Action
+    Min age: Min age
+    Max age: Max age
+    Years: Time
+    Harvest by: Harvest type
+    Value: Volume
+    By means of: Harvest criteria
+
+    # Plot general information
+    PLOT_TYPE: IFN Plot
+    PLOT_AREA: Plot area
+    PROVINCE: Province
+    STUDY_AREA: Study Area
+    MUNICIPALITY: Municipality
+    FOREST: Forest
+    MAIN_SPECIE: Main Specie
+    SPECIE_IFN_ID: Main Specie NFI ID
+    SLOPE: Slope  # (%)
+    ASPECT: Aspect  # (rad)
+    CONTINENTALITY: Continentality  # (linear distance to the Mediterranean sea, Km)
+    LONGITUDE: Coord_X
+    LATITUDE: Coord_Y
+    ALTITUDE: Altitude
+
+    # Basic plot variables measured
+    EXPAN: Expan  # expansion factor
+    AGE: Age  # (years)
+    DENSITY: Density  # (nº trees/ha)
+
+    # Basic plot variables calculated - basal area
+    BASAL_AREA: Basal area  # (m2/ha)
+    BA_MAX: BA Max  # (m2)
+    BA_MIN: BA Min  # (m2)
+    MEAN_BA: Mean BA  # (m2)
+
+    # Basic plot variables calculated - diameter
+    DBH_MAX: D Max  # (cm)
+    DBH_MIN: D Min  # (cm)
+    MEAN_DBH: Mean dbh  # (cm)
+    QM_DBH: Quadratic mean dbh  # (m2)
+    DOMINANT_DBH: Dominant dbh  # (cm)
+
+    # Basic plot variables calculated - height
+    H_MAX: H Max  # (m)
+    H_MIN: H Min  # (m)
+    MEAN_H: Mean height  # (m)
+    DOMINANT_H: Dominant height  # (m)
+
+    # Basic plot variables calculated - crown
+    CROWN_MEAN_D: Mean crown diameter  # (m)
+    CROWN_DOM_D: Dominant crown diameter  # (m)
+    CANOPY_COVER: Canopy cover  # (%)
+
+    # Basic plot variables calculated - plot
+    REINEKE: Reineke Index  # Stand Density Index - SDI
+    HART: Hart-Becking Index  # Hart-Becking Index - S
+    SI: Site Index  # (m)
+    QI: Quality Index  # Quality Index
+
+    # Plot variables calculated - volume
+    VOL: Volume  # (m3)
+    BOLE_VOL: Bole Volume  # (m3)
+    BARK_VOL : Bark Volumen  # (m3)  
+
+    # Plot variables calculated - biomass
+    WSW: Wsw  # wsw = stem wood (Tn)
+    WSB: Wsb  # wsb = stem bark (Tn)
+    W_CORK: W Fresh Cork  # w_cork = fresh cork biomass (Tn)
+    WTHICKB: Wthickb  # wthickb = Thick branches > 7 cm (Tn)
+    WSTB: Wstb  # wstb = wsw + wthickb, stem + branches >7 cm (Tn)
+    WB2_7: Wb2_7  # wb2_7 = branches (2-7 cm) (Tn)
+    WB2_T: Wb2_t  # wb2_t = wb2_7 + wthickb; branches >2 cm (Tn)
+    WTHINB: Wthinb  # wthinb = Thin branches (2-0.5 cm) (Tn)
+    WB05: Wb0.5  # wb05 = thinniest branches (<0.5 cm) (Kg)
+    WL: Wl  # wl = leaves (Tn)
+    WTBL: Wtbl  # wtbl = wthinb + wl; branches <2 cm and leaves (Tn)
+    WBL0_7: Wbl0_7  # wbl0_7 = wb2_7 + wthinb + wl; branches <7 cm and leaves (Tn)
+    WR: Wr  # wr = roots (Tn)
+    WT: Wt  # wt = biomasa total (Tn)
+
+    # Plot variables calculated - wood uses
+    UNWINDING: Unwinding  # unwinding = useful volume for unwinding destiny (m3)
+    VENEER: Veneer  # veneer = useful volume for veneer destiny (m3)
+    SAW_BIG: Saw big  # saw_big = useful volume for big saw destiny (m3)
+    SAW_SMALL: Saw small  # saw_small = useful volume for small saw destiny (m3)
+    SAW_CANTER: Saw canter  # saw_canter = useful volume for canter saw destiny (m3)
+    POST: Post  # post = useful volume for post destiny (m3)
+    STAKE: Stake  # stake = useful volume for stake destiny (m3)
+    CHIPS: Chips  # chips = useful volume for chips destiny (m3)
+
+  tree:
+    # IDs
+    INVENTORY_ID: Inventory ID
+    PLOT_ID: Plot ID
+    TREE_ID: Tree ID
+
+    # Tree general information
+    number_of_trees: number of trees
+    specie: specie
+    quality: quality
+    shape: shape
+    special_param: parameter esp
+    remarks: remarks
+    age_130: normal age  # (years)
+    social_class: social class
+    tree_age: tree age  # (years)
+    coord_x: coord X
+    coord_y: coord Y
+
+    # Basic variables measured
+    dbh_1: dbh 1  # diameter mesasurement 1 (cm)
+    dbh_2: dbh 2  # diameter mesasurement 1 (cm)
+    dbh: dbh  # diameter at breast height (cm)
+    stump_h: stump height  # (m)
+    height: height  # total height (m)
+    bark_1: bark thickness 1  # bark thickness mesasurement 1 (mm)
+    bark_2: bark thickness 2  # bark thickness mesasurement 2 (mm)
+    bark: bark thickness  # mean bark thickness (mm)
+    expan: expan  # expansion factor
+
+    # Basic variables calculated
+    normal_circumference: normal circumference  # circumference at breast height (cm)
+    hd_ratio: slentherness  # (%)
+    basal_area: basal area  #  (m2)
+    bal: basal area acumulated  # (m2)
+    ba_ha: basal area per ha  # (m2/ha)    
+
+    # Crown variables
+    cr: crown ratio  # (%)
+    lcw: lcw  #  largest crown width (m)
+    # max_crown_width: maximum crown width  # (m)
+    hcb: hcb  # height crown base (m)
+    hlcw: hlcw  # height of largest crown width (m)
+
+    # Volume variables
+    vol: volume  # volume with bark (dm3)
+    bole_vol: bole volume  # volume without bark (dm3)
+    bark_vol: bark vol  # volume of bark (dm3)
+    firewood_vol: fuelwood volume  # (dm3)
+    vol_ha: volume per ha  # volume with bark per hectare (m3/ha)
+
+    # Biomass variables
+    wsw: wsw  # wsw = stem wood (Kg)
+    wsb: wsb # wsb = stem bark (Kg)
+    w_cork: w fresh cork  # w_cork = fresh cork biomass (Kg)
+    wthickb: wthickb  # wthickb = Thick branches > 7 cm (Kg)
+    wstb: wstb  # wstb = wsw + wthickb, stem + branches >7 cm (Kg)
+    wb2_7: wb2_7  # wb2_7 = branches (2-7 cm) (Kg)
+    wb2_t: wb2_t  # wb2_t = wb2_7 + wthickb; branches >2 cm (Kg)
+    wthinb: wthinb  # wthinb = Thin branches (2-0.5 cm) (Kg)
+    wb05: wb0.5  # wb05 = thinniest branches (<0.5 cm) (Kg)
+    wl: wl  # wl = leaves (Kg)
+    wtbl: wtbl  # wtbl = wthinb + wl; branches <2 cm and leaves (Kg)
+    wbl0_7: wbl0_7  # wbl0_7 = wb2_7 + wthinb + wl; branches <7 cm and leaves (Kg)
+    wr: wr  # wr = roots (Kg)
+    wt: wt  # wt = biomasa total (Kg)
+
+    # Wood uses variables
+    unwinding: unwinding  # unwinding = useful volume for unwinding destiny (dm3)
+    veneer: veneer  # veneer = useful volume for veneer destiny (dm3)
+    saw_big: saw big  # saw_big = useful volume for big saw destiny (dm3)
+    saw_small: saw small  # saw_small = useful volume for small saw destiny (dm3)
+    saw_canter: saw canter  # saw_canter = useful volume for canter saw destiny (dm3)
+    post: post  # post = useful volume for post destiny (dm3)
+    stake: stake  # stake = useful volume for stake destiny (dm3)
+    chips: chips  # chips = useful volume for chips destiny (dm3)
+
+    # Quercus suber special variables
+    dbh_oc: dbh over cork  # dbh over cork (cm) - Quercus suber
+    h_uncork: uncork height  # uncork height on main stem (m) - Quercus suber
+    nb: uncork boughs  # number of main bough stripped - Quercus suber
+    cork_cycle: cork cycle  # moment to obtain cork data; 0 to the moment just immediately before the stripping process,
+# or 1 to the moment after the stripping process or at an intermediate age of the cork cycle production - Quercus suber
+    # uncork_type: uncork tyoe  # s = only stem; pb = principal branches; sb = secondary branches - Quercus suber
+
+    # Status
+    status: status  # status of the tree, M-> die, C-> harvested, I-> ingrowth

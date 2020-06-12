@@ -1,0 +1,243 @@
+es:
+  general:  # Summary sheet
+
+    # Cuts
+    Percent of trees: Porcentaje de árboles
+    Volumen: Volumen
+    Area: Área
+    Cut Down by Tallest: Corta por lo alto
+    Cut Down by Smallest: Corta por lo bajo
+    Systematics cut down: Corta sistemática
+
+    # General information
+    Plots: Parcelas
+    Node: Node
+    Trees: Pies Mayores
+    Empty: No se aplica
+    Summary: Resumen
+    NodesSummary: Resumen nodos
+    main_specie: Especie Principal
+    specie_ifn_id: IFN ID Especie Principal
+    forest: Monte
+    study_area: Zona de estudio
+    model: Modelo
+    scenario: Escenario
+    inventory: Inventario
+    template: Plantilla
+    plot: Parcela
+
+    # Actuations
+    LOAD: Carga Inicial
+    INIT: Inicialización
+    EXECUTION: Ejecución
+    HARVEST: Corta
+
+    # Variables name 
+    measure_1: Ho m
+    measure_2: N pies/ha
+    measure_3: Dg cm
+    measure_4: G m2/ha
+    measure_5: V m3/ha
+    measure_6: N pies/ha
+    measure_7: Dg cm
+    measure_8: V m3/ha
+    measure_9: N pies/ha
+    measure_10: Dg cm
+    measure_11: G m2/ha
+    measure_12: V m3/ha
+    measure_13: N pies/ha
+    measure_14: Dg cm
+    measure_15: V m3/ha
+    measure_16: N pies/ha
+    measure_17: G m2/ha
+    merged_header_1: Masa principal antes de la clara
+    merged_header_2: Masa extraída
+    merged_header_3: Masa principal después de la clara
+    merged_header_4: Masa muerta
+    merged_header_5: Masa incorporada   
+
+  plot:
+    # IDs
+    INVENTORY_ID: ID Inventario
+    PLOT_ID: ID Parcela
+
+    # Stage general information
+    Id: ID
+    Age: Edad de escenario
+    Action: Acción
+    Min age: Edad Min
+    Max age: Edad Max
+    Years: Tiempo
+    Harvest by: Tipo de corta
+    Value: Volumen
+    By means of: Criterio de corta
+
+    # Plot general information 
+    PLOT_TYPE: IFN Parcela
+    PLOT_AREA: Superficie
+    PROVINCE: Provincia
+    STUDY_AREA: Zona de Estudio
+    MUNICIPALITY: Municipio
+    FOREST: Monte
+    MAIN_SPECIE: Especie Principal
+    SPECIE_IFN_ID: IFN ID Especie Principal
+    SLOPE: Pendiente  # (%)
+    ASPECT: Exposición  # (rad)
+    CONTINENTALITY: Continentalidad  # (linear distance to the Mediterranean sea, Km)
+    LONGITUDE: Coord_X
+    LATITUDE: Coord_Y
+    ALTITUDE: Altitud
+
+    # Basic plot variables measured
+    EXPAN: Factor expansión  # expansion factor
+    AGE: Edad  # (years)
+    DENSITY: Densidad  # (nº trees/ha)
+
+    # Basic plot variables calculated - basal area
+    BASAL_AREA: Área Basimétrica  # (m2/ha)
+    BA_MAX: BA Max  # (m2)
+    BA_MIN: BA Min  # (m2)
+    MEAN_BA: BA Media  # (m2)
+
+    # Basic plot variables calculated - diameter   
+    DBH_MAX: DAP Max  # (cm)
+    DBH_MIN: DAP Min  # (cm)    
+    MEAN_DBH: DAP Medio  # (cm)
+    QM_DBH: DAP Cuadrático  # (cm)
+    DOMINANT_DBH: DAP Dominante  # (cm)
+
+    # Basic plot variables calculated - height
+    H_MAX: Altura Max  # (m)
+    H_MIN: Altura Min  # (m)
+    MEAN_H: H Media  # (m)
+    DOMINANT_H: Altura Dominante  # (m)
+
+    # Basic plot variables calculated - crown
+    CROWN_MEAN_D: DM Copa  # (m)
+    CROWN_DOM_D: DG Copa  # (m)
+    CANOPY_COVER: Fracción Cabida Cubierta  # (%)
+
+    # Basic plot variables calculated - plot    
+    REINEKE: Índice Reineke  # Stand Density Index - SDI
+    HART: Índice Hart-Becking  # Hart-Becking Index - S
+    SI: Índice de Sitio  # (m)
+    QI: Índice de Calidad  # Quality Index
+
+    # Plot variables calculated - volume
+    VOL: Volumen con Corteza  # (m3)
+    BOLE_VOL: Volumen sin Corteza  # (m3)
+    BARK_VOL : Volumen de Corteza  # (m3)
+
+    # Plot variables calculated - biomass
+    WSW: Wsw  # wsw = stem wood (Tn)
+    WSB: Wsb  # wsb = stem bark (Tn)
+    W_CORK: W Corcho Fresco  # w_cork = fresh cork biomass (Tn)
+    WTHICKB: Wthickb  # wthickb = Thick branches > 7 cm (Tn)
+    WSTB: Wstb  # wstb = wsw + wthickb, stem + branches >7 cm (Tn)
+    WB2_7: Wb2_7  # wb2_7 = branches (2-7 cm) (Tn)
+    WB2_T: Wb2_t  # wb2_t = wb2_7 + wthickb; branches >2 cm (Tn)
+    WTHINB: Wthinb  # wthinb = Thin branches (2-0.5 cm) (Tn)
+    WB05: Wb0.5  # wb05 = thinniest branches (<0.5 cm) (Kg)
+    WL: Wl  # wl = leaves (Tn)
+    WTBL: Wtbl  # wtbl = wthinb + wl; branches <2 cm and leaves (Tn)
+    WBL0_7: Wbl0_7  # wbl0_7 = wb2_7 + wthinb + wl; branches <7 cm and leaves (Tn)
+    WR: Wr  # wr = roots (Tn)
+    WT: Wt  # wt = biomasa total (Tn)
+
+    # Plot variables calculated - wood uses
+    UNWINDING: Desenrollo  # unwinding = useful volume for unwinding destiny (m3)
+    VENEER: Chapa  # veneer = useful volume for veneer destiny (m3)
+    SAW_BIG: Sierra Gruesa  # saw_big = useful volume for big saw destiny (m3)
+    SAW_SMALL: Sierra  # saw_small = useful volume for small saw destiny (m3)
+    SAW_CANTER: Sierra Cánter  # saw_canter = useful volume for canter saw destiny (m3)
+    POST: Postes  # post = useful volume for post destiny (m3)
+    STAKE: Estacas  # stake = useful volume for stake destiny (m3)
+    CHIPS: Trituración  # chips = useful volume for chips destiny (m3)
+
+  tree:
+    # IDs
+    INVENTORY_ID: ID inventario
+    PLOT_ID: ID parcela
+    TREE_ID: ID árbol
+
+    # Tree general information
+    number_of_trees: número de individuos
+    specie: especie
+    quality: calidad
+    shape: forma
+    special_param: parámetros especiales
+    remarks: observaciones
+    age_130: edad a 1.30  # (years)
+    social_class: clase sociológica
+    tree_age: edad base  # (years)
+    coord_x: coordenada X
+    coord_y: coordenada Y
+
+    # Basic variables measured        
+    dbh_1: dap 1  # diameter mesasurement 1 (cm)
+    dbh_2: dap 2  # diameter mesasurement 2 (cm)
+    dbh: dap  # diameter at breast height (cm)
+    stump_h: altura tocón  # (m)
+    height: altura  # total height (m)
+    bark_1: espesor corteza 1  # bark thickness mesasurement 1 (mm)
+    bark_2: espesor corteza 2  # bark thickness mesasurement 2 (mm)
+    bark: espesor corteza  # mean bark thickness (mm)
+    expan: factor expansión  # expansion factor
+
+    # Basic variables calculated
+    normal_circumference: circunferencia normal  # circumference at breast height (cm)
+    hd_ratio: esbeltez  # (%)
+    basal_area: área basal  #  (m2)
+    bal: área basal acumulada  # (m2)
+    ba_ha: área basal por ha  # (m2/ha)
+
+    # Crown variables
+    cr: índice copa viva  # (%)
+    lcw: máximo ancho de copa  #  largest crown width (m)
+    # max_crown_width: sección copa máxima  # (m)
+    hcb: altura base copa  # height crown base (m)
+    hlcw: altura máximo ancho de copa  # height of largest crown width (m)
+
+    # Volume variables
+    vol: volumen con corteza  # volume with bark (dm3)
+    bole_vol: volumen sin corteza  # volume without bark (dm3)
+    bark_vol: volumen de corteza  # volume of bark (dm3)
+    firewood_vol: volumen de leñas  # (dm3)
+    vol_ha: volumen con corteza por ha  # volume with bark per hectare (m3/ha)
+
+    # Biomass variables
+    wsw: wsw  # wsw = stem wood (Kg)
+    wsb: wsb # wsb = stem bark (Kg)
+    w_cork: w corcho fresco  # w_cork = fresh cork biomass (Kg)
+    wthickb: wthickb  # wthickb = Thick branches > 7 cm (Kg)
+    wstb: wstb  # wstb = wsw + wthickb, stem + branches >7 cm (Kg)
+    wb2_7: wb2_7  # wb2_7 = branches (2-7 cm) (Kg)
+    wb2_t: wb2_t  # wb2_t = wb2_7 + wthickb; branches >2 cm (Kg)
+    wthinb: wthinb  # wthinb = Thin branches (2-0.5 cm) (Kg)
+    wb05: wb0.5  # wb05 = thinniest branches (<0.5 cm) (Kg)
+    wl: wl  # wl = leaves (Kg)
+    wtbl: wtbl  # wtbl = wthinb + wl; branches <2 cm and leaves (Kg)
+    wbl0_7: wbl0_7  # wbl0_7 = wb2_7 + wthinb + wl; branches <7 cm and leaves (Kg)
+    wr: wr  # wr = roots (Kg)
+    wt: wt  # wt = biomasa total (Kg)
+
+    # Wood uses variables    
+    unwinding: desenrollo  # unwinding = useful volume for unwinding destiny (dm3)
+    veneer: chapa  #v eneer = useful volume for veneer destiny (dm3)
+    saw_big: sierra gruesa  # saw_big = useful volume for big saw destiny (dm3)
+    saw_small: sierra  # saw_small = useful volume for small saw destiny (dm3)
+    saw_canter: sierra cánter  # saw_canter = useful volume for canter saw destiny (dm3)
+    post: poste  # post = useful volume for post destiny (dm3)
+    stake: estaca  # stake = useful volume for stake destiny (dm3)
+    chips: trituración  # chips = useful volume for chips destiny (dm3)
+
+    # Quercus suber special variables
+    dbh_oc: dap + corcho  # dbh over cork (cm) - Quercus suber
+    h_uncork: altura descorche  # uncork height on main stem (m) - Quercus suber
+    nb: ramas descortezas  # number of main bough stripped - Quercus suber
+    cork_cycle: ciclo de corcho  # moment to obtain cork data; 0 to the moment just immediately before the stripping process,
+# or 1 to the moment after the stripping process or at an intermediate age of the cork cycle production - Quercus suber
+    # uncork_type: tipo de descorche  # s = only stem; pb = principal branches; sb = secondary branches - Quercus suber
+
+    # Status
+    status: estado  # status of the tree, M-> die, C-> harvested, I-> ingrowth
